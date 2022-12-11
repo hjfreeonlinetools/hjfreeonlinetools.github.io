@@ -9,69 +9,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- title -->
-    <title>Page Title</title>
+    <title>Online Timer | Free Online Tools</title>
+
+    <!-- Meta -->
+    <meta name="keywords" content="Timer, Online Timer, Online Tools, Tools, Free Tools">
+
+    <meta name="application-name" content="Online Timer | Free Online Tools, all digital tools you need">
+    <meta name="msapplication-tooltip" content="Online Timer | Free Online Tools, all digital tools you need">
+    <meta name="description" content="Online Timer | Free Online Tools, all digital tools you need">
+
+    <meta property="og:title" content="Online Timer | Free Online Tools, all digital tools you need">
+    <meta property="og:image:alt" content="Online Timer | Free Online Tools, all digital tools you need">
+    <meta property="og:description" content="Online Timer | Free Online Tools, all digital tools you need">
+    <meta property="og:url" content="https://freeonlinetools.click">
+    <meta property="og:site_name" content="Online Timer | Free Online Tools">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <!-- <meta property="og:image" content="https://salarybuff.net/img/logo-en.png"> -->
+
+    <!-- <meta property="twitter:card" content="summary">
+        <meta property="twitter:creator" content="@salarybuff">
+        <meta property="twitter:title" content="샐러리버프 | 월급에 날개를 달자. 파이어족을 위한 모든 것">
+        <meta property="twitter:description" content="월급에 날개를 달자. 파이어족을 위한 모든 것, 샐러리버프"> -->
+
 
     <!-- styles -->
-
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="../style.css" rel="stylesheet">
 
     <!-- scripts -->
-    <script src="./index.js"></script>
+    <script type='text/javascript' src="./index.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -79,7 +48,7 @@
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Fixed navbar</a>
+                <a class="navbar-brand" href="#">Free Online Tools</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -87,13 +56,16 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link active" href="/timer">Timer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link" href="/stopwatch">Stopwatch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/alarm">Alarm</a>
                         </li>
                     </ul>
                 </div>
@@ -103,11 +75,77 @@
     <!-- Begin page content -->
     <main class="flex-shrink-0">
         <div class="container">
-            <h1 class="mt-5">Sticky footer with fixed navbar</h1>
-            <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and
-                CSS. A fixed navbar has been added with <code class="small">padding-top: 60px;</code> on the <code
-                    class="small">main &gt; .container</code>.</p>
-            <p>Back to <a href="/docs/5.2/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+            <h1 class="mt-5">Online Timer</h1>
+            <p class="lead">
+                1. Set time with <code class="small">+</code> buttons and press <code class="small">Start</code> button
+                to start.
+                <br>
+                2. Press <code class="small">Reset</code> button to reset time and restart.
+            </p>
+        </div>
+        <div class="container">
+            <div class="mb-4 d-flex">
+                <button class="btn btn-primary btn-lg px-4" onclick="reset(this)">Reset</button>
+            </div>
+
+            <div class="mb-4 d-flex justify-content-center align-items-center">
+                <table>
+                    <tr>
+                        <td>
+                            <span class="timer-big" id="timerDisplayHours">0</span>
+                        </td>
+                        <td>
+                            <span class="h4">h</span>
+                        </td>
+                        <td>
+                            <span class="timer-big" id="timerDisplayMinutes">0</span>
+                        </td>
+                        <td>
+                            <span class="h4">m</span>
+                        </td>
+                        <td>
+                            <span class="timer-big" id="timerDisplaySeconds">0</span>
+                        </td>
+                        <td>
+                            <span class="h4">s</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb-4 d-flex justify-content-center align-items-center">
+                <table>
+                    <tr>
+                        <td class="text-align-center">
+                            <button class="btn btn-primary btn-lg px-4" onclick="addHour(1)">+ 1h</button><br>
+                            <button class="btn btn-primary btn-lg px-4" onclick="addHour(5)">+ 5h</button><br>
+                            <button class="btn btn-primary btn-lg px-4" onclick="addHour(10)">+ 10h</button>
+                        </td>
+                        <td class="text-align-center">
+                            <button class="btn btn-primary btn-lg px-4" onclick="addMinute(1)">+ 1m</button><br>
+                            <button class="btn btn-primary btn-lg px-4" onclick="addMinute(5)">+ 5m</button><br>
+                            <button class="btn btn-primary btn-lg px-4" onclick="addMinute(10)">+ 10m</button>
+                        </td>
+                        <td class="text-align-center">
+                            <button class="btn btn-primary btn-lg px-4" onclick="addSecond(1)">+ 1s</button><br>
+                            <button class="btn btn-primary btn-lg px-4" onclick="addSecond(5)">+ 5s</button><br>
+                            <button class="btn btn-primary btn-lg px-4" onclick="addSecond(10)">+ 10s</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="mb-4 d-flex justify-content-center align-items-center">
+                <button id="btn-start" class="btn btn-primary btn-lg px-4" onclick="start(this)">Start</button>
+                <button id="btn-pause" class="btn btn-primary btn-lg px-4" style="display:none"
+                    onclick="pause(this)">Pause</button>
+                <button id="btn-resume" class="btn btn-primary btn-lg px-4" style="display:none"
+                    onclick="resume(this)">Resume</button>
+                <button id="btn-stop" class="btn btn-primary btn-lg px-4" style="display:none"
+                    onclick="stop(this)">Stop</button>
+
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -116,7 +154,7 @@
 </body>
 <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <span class="text-muted">Created by the Free Online Tools team &middot; &copy; 2022</span>
     </div>
 </footer>
 
