@@ -1,2 +1,2 @@
-User-agent: *
+User-Agent: *
 Sitemap: https://freeonlinetools.click/sitemap.xml
