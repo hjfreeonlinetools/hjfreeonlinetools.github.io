@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: https://freeonlinetools.click/sitemap.xml
+Sitemap: https://simpletools.click/sitemap.xml
